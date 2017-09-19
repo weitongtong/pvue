@@ -9,8 +9,11 @@ $ open index.html
 
 - vm.js
   定义了 Vue 类，构造函数传入 options 参数。
+
   内部声明 el data 等属性。
+
   调用observe。
+  
   调用compile，并挂载到dom。
 - observe.js
   定义了 Observe (观察者) 类，构造函数传入 obj(数据对象) 和 vm(vue实例)。
