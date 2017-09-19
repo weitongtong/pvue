@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <input type="text" v-model="text">
+    <input type="text" v-model="text">
+    {{text}}
+  </div>
+  <script src="./bundle.js"></script>
+  <script>
+    // 创建 Vue 实例
+    var vm = new Vue({
+      el: '#app',
+      data: {
+        text: 'hello, world!',
+      }
+    })
+  </script>
+</body>
+</html>
